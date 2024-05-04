@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+/* eslint-disable max-lines */
 import { PlaceModel } from "./models/placeModel.js"
 
 export const createPlaceRestaurant = async ({

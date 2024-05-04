@@ -1,6 +1,11 @@
 import * as yup from "yup"
 
-export const lieuValidator = yup.string().min(3).required().label("lieu")
+export const lieuValidator = yup
+  .string()
+  .min(3)
+  .required()
+  .oneOf(["bar", "restaurant", "musee", "parc"])
+  .label("lieu")
 export const nomValidator = yup.string().min(3).required().label("nom")
 export const adresseValidator = yup.string().min(3).required().label("adresse")
 export const villeValidator = yup.string().min(3).required().label("ville")
